@@ -16,9 +16,9 @@ Facades are special classes that are designed to simplify your code. Laravel com
 <a name="explanation"></a>
 ## Explanation
 
-Facades typicall only contain two methods, a `getFacadeAccessor` method and a `__callStatic` method. The `getFacadeAccessor` method simply returns a string key that can be used to resolve a class out of the [IoC container](/docs/ioc). This class resolved using this key will be called via the `__callStatic` method when methods are called on the Facade.
+Facades typically only contain two methods, a `getFacadeAccessor` method and a `__callStatic` method. The `getFacadeAccessor` method simply returns a string key that can be used to resolve a class out of the [IoC container](/docs/ioc). The class resolved using this key will be called via the `__callStatic` method when methods are called on the Facade.
 
-So, Facades are nothing more than a way to provide shorter syntax to calling classes that available in the application container.
+So, Facades are nothing more than a way to provide shorter syntax to calling classes that are available in the application container.
 
 <a name="practical-usage"></a>
 ## Practical Usage
